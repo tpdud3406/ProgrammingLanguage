@@ -1,1 +1,1 @@
-for x in range ( 1 , 10 ) : if ( x > 5 ) : print ( x )
+for x in 1:10 : if(x > 5) : sum * 10
