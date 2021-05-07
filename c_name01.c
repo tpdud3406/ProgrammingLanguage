@@ -51,10 +51,10 @@ int lex();
 
 /******************************************************/
 /* main driver */
-main() {
+int main(void) {
 	/* Open the input data file and process its contents */
 	if ((in_fp = fopen("front01.c", "r")) == NULL)
-		printf("ERROR - cannot open front.in \n");
+		printf("ERROR - cannot open front01.c \n");
 	else {
 		getChar();
 		do {
