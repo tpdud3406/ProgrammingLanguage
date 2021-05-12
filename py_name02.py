@@ -37,22 +37,6 @@ RANGE_CODE = 36
 #############################################################
 ''' 리스트에 해당 토큰에 해당하는 값과 문자를 보여줘야 함'''
 
-'''
-# 해당 문자가 LETTER 인지 DIGIT 인지 UNKOWN인지 파악!
-def getChar(x):
-        nextChar = x
-        if nextChar != None:
-            if str(nextChar).isalpha() == True:
-                charClass = LETTER
-            elif str(nextChar).isdigit() == True:
-                charClass = DIGIT
-            else:
-                charClass = UNKNOWN
-        else: 
-            charClass = EOF 
-        return charClass
-'''
-
 # 연산자 lexeme 리스트에 추가!
 def lex(ch):
     if ch == '(':
