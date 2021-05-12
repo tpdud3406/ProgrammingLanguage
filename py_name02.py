@@ -101,19 +101,18 @@ def lex(ch):
 ''' main 함수 '''
 def main():
     # Open the input data file and process its list contents #
-    #in_fp = open('front02.py','r')
     in_fp = [x for x in open('front02.py')]
     in_fp = in_fp[0]
     in_fp = word_tokenize(in_fp)
     
-    list1 = []
+    lexeme = []
 
     if in_fp == None:
         print("ERROR - cannot open front02.py")
     else :
         for x in in_fp:
-            list1.append(lex(x))
-        for x,y in zip(list1,in_fp):
+            lexeme.append(lex(x))
+        for x,y in zip(lexeme,in_fp):
             print("Next token is: " + str(x) + ", Next lexeme is " + str(y))    
 
     print("Next token is: -1, Next lexeme is EOF")
