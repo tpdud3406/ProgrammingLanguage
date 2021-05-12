@@ -34,10 +34,10 @@ int lex();
 #define RIGHT_PAREN 26
 #define SEMICOLON 27 // ';'
 #define ASSIGNMENT_OPERATOR 28 // '='
-#define BIG 29 // '>'
-#define SMALL 30 // '<'
-#define LEFT_BRACKETS 31 // '{'
-#define RIGHT_BRACKETS 32 // '}'
+#define BIG 36 // '>'
+#define SMALL 37 // '<'
+#define LEFT_BRACKETS 39 // '{'
+#define RIGHT_BRACKETS 40 // '}'
 
 /* Reserved Token Codes */
 /* 'while' 과 'do_while' 과 'switch' 와 'float' 이 case 'while': 과 같이 쓰일때
